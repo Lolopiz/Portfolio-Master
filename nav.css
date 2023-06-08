@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* Importation de la police de caractères Montserrat */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/* Application de la police de caractères Montserrat à tout le corps de la page */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Réinitialisation du style des liens pour supprimer la décoration de soulignement et utiliser la couleur héritée */
+
+.navbar-container {
+  margin: 0 auto;
+  padding: 5em 3em;
+  text-align: center;
+}
+
+/* Conteneur de la barre de navigation avec une marge, un espacement intérieur et un alignement centré */
+
+div.container a {
+  text-decoration: none;
+  font: 20px;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+/* Styles pour les liens dans le conteneur de la barre de navigation, avec une police de 20px, des marges et un espacement intérieur, ainsi qu'une position relative et un curseur de pointeur */
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+/* Transformation du texte des liens en majuscules */
+
+div.topBotomBordersIn a:before,
+div.topBotomBordersIn a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: grey;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+/* Styles pour les éléments avant et après les liens avec une position absolue, une largeur de 100%, une hauteur de 2px, un fond gris et une transition pour l'opacité */
+
+div.topBotomBordersIn a:before {
+  top: 0px;
+  transform: translateY(-10px);
+}
+
+/* Style pour l'élément avant le lien avec une position en haut et une translation vers le haut de 10px */
+
+div.topBotomBordersIn a:after {
+  bottom: 0px;
+  transform: translateY(10px);
+}
+
+/* Style pour l'élément après le lien avec une position en bas et une translation vers le bas de 10px */
+
+div.topBotomBordersIn a:hover:before,
+div.topBotomBordersIn a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* Styles appliqués lorsque survoler les liens, en faisant apparaître les éléments avant et après avec une opacité de 1 et une translation vers le haut et le bas de 0px respectivement */
