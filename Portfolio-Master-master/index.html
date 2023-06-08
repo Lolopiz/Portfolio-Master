@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essaie 1 - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./js/main.js" />
+    <link rel="stylesheet" href="./js/fadeIn.js" />
+  </head>
+  <body>
+    <header class="banner" id="banner">
+      <div class="banner-header" id="banner-head">
+        <h1 id="h1">LORENZI MATTEO</h1>
+        <img
+          id="banner-photo"
+          src="./img//peeps-avatar-alpha.png"
+          alt="Votre photo"
+        />
+      </div>
+    </header>
+    <nav class="navbar-container">
+      <div class="container purple topBotomBordersIn">
+        <a href="#About" class="nav-link">Qui-suis-je</a>
+
+        <a href="#projet" class="nav-link">Mes projets</a>
+
+        <a href="#Skills" class="nav-link">Compétences</a>
+
+        <a href="#Contact" class="nav-link">Mon Contact</a>
+      </div>
+    </nav>
+    <main>
+      <section class="main-container" id="main_cont">
+        <h2 >À propos de moi</h2>
+        <div class="main-text" id="main-text">
+          <p id="About">
+            Bonjour ! Je m'appelle <span>LORENZI MATTEO</span> et j'aimerai
+            devenir designer UI/UX.
+          </p>
+          <p>
+            Ma philosophie de conception est centrée sur l'utilisateur. Je crois
+            qu'un bon design est celui qui allie harmonieusement esthétique et
+            fonctionnalité.
+          </p>
+          <p>
+            Je cherche constamment à améliorer mon savoir-faire et à me tenir au
+            courant des dernières tendances et technologies en matière de
+            conception. Je me pousse toujours à être le meilleur designer
+            possible.
+          </p>
+          <p>
+            En plus de mes compétences en conception, je suis également un bon
+            communicant et je serais un collaborateur précieux/attentif. Je
+            comprends qu'une communication efficace est la clé pour mener à bien
+            un projet.
+          </p>
+          <p>Globalement, je suis passionné par la création d'interface.</p>
+        </div>
+        <img src="./img/about-photo.avif" alt="" />
+      </section>
+      <section class="sae">
+        <h2 id="projet">Mes Projets</h2>
+        <a href="index-sae.html">
+        <button class="learn-more">
+          Mes Projets
+        </button>
+        </a>
+      </section>
+      <section class="main-container">
+        <h2 >Mes compétences</h2>
+        <div class="main-text" id="main-text">
+          <p id="Skills">
+            En tant que designer UI/UX, j'ai développé un ensemble diversifié de
+            compétences. Voici certaines des compétences que je mets en pratique
+            :
+          </p>
+          <p>
+            <span>Création de maquettes</span> et de prototypes - Je maîtrise la
+            création de maquettes et de prototypes qui aident à visualiser
+            l'interface utilisateur et à tester différents concepts de
+            conception.
+          </p>
+          <p>
+            <span>Conception d'interface utilisateur (UI)</span> - J'ai le sens
+            du design et je suis compétent pour créer des interfaces
+            visuellement attrayantes qui sont à la fois esthétiques et
+            fonctionnelles.
+          </p>
+          <p>
+            <span>Travail collaboratif</span> - Je suis un communicant efficace
+            et je sais travailler en équipe, pour mener à bien un projet.
+          </p>
+          <p>
+            <span>Outils de conception</span> - Je maîtrise l'utilisation
+            d'outils de conception tels que Figma, Canvas et d'autre pour créer
+            des designs et des prototypes de haute qualité.
+          </p>
+          <p>
+            Dans l'ensemble, mes compétences création de maquettes, conception
+            d'interfaces utilisateur, collaboration et utilisation d'outils de
+            conception feront de moi
+            <span
+              >un designer UI/UX polyvalent capable de mener à bien des projets
+              avec succès</span
+            >.
+          </p>
+        </div>
+        <img src="./img/skills-photo.avif" alt="" />
+      </section>
+      <section class="contact">
+        <h2 >Mon Contact</h2>
+        <div class="main-contact">
+          <p id="Contact">
+            Merci d'avoir pris le temps de consulter mon portfolio de conception
+            UI/UX. Si vous êtes intéressé à travailler avec moi ou si vous avez
+            des questions, n'hésitez pas à me contacter à l'adresse
+            <span><a href="mailto:matteo.lorenzi@etu.univ-grenoble-alpes.fr?subject=Demande%20d'information%20complémentaire">matteo.lorenzi@etu.univ-grenoble-alpes.fr<a/></span>. J'attends avec impatience
+            de vos nouvelles !
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social">
+        <ul>
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li>
+            <a href="mailto:matteo.lorenzi@etu.univ-grenoble-alpes.fr?subject=Demande%20d'information%20complémentaire">Email</a>
+          </li>
+          <li><a href="https://github.com">Github</a></li>
+          <li>
+            <p>👋</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/fadeIn.js"></script>
+    <script>
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          document.title = "Déjà Parti ! :'( (Portfolio)";
+        } else {
+          document.title = "Essaie 1 - Portfolio";
+        }
+      });
+    </script>
+  </body>
+</html>
